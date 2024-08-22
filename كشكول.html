@@ -1,0 +1,336 @@
+<html>
+    <head>
+        <title>page kashkuol</title>
+
+        <style>
+    
+
+        td{
+            border: 2px solid rgb(168, 168, 243);
+        }
+
+        a{
+            color: brown;
+          
+        }
+        
+        .mar{
+            font-size: 50px;
+            color: antiquewhite;
+            background-color: cornflowerblue;
+            text-align: center;
+        }
+        .mar2{
+            color: blue;
+            /*جعل اللون مموج*/
+            background : linear-gradient(45deg , #64af72, #d196be);
+            font-size: xx-large;
+        }
+
+        .labelid{
+            color: rgb(180, 236, 183);
+            font-size: xx-large;
+            background : linear-gradient(to right , #36cdd2, #ce68c9);
+            text-align: center;
+            font-style:oblique;
+          
+        }
+
+        .clasA{
+            color: rgb(12, 120, 77);
+            font-size: x-large;
+            background-color: rgb(255, 246, 246);
+        }
+        .clasINPUT{
+            size: 100px;
+        }
+
+        h2{
+            color: blue;
+            background-color: cornsilk;
+        }
+
+        h1{
+            color: brown;
+            text-align: center;
+        }
+
+        div{
+            border: 10px rgb(0, 229, 255)  inset;
+            width: 130px;
+            height:130px;
+        }
+
+        P{
+            font-size: x-large;
+            color: rgb(43, 201, 98);
+        }
+
+
+        
+        </style>
+
+    </head>
+
+    <body> 
+        <marquee class="mar2" direction="right" behavior="alternate">
+            تحريك النص او صورة بتأثير عملية الدوران
+            <br><br>
+            <img src="imag1.jpg" width="70px" height="60">
+          </marquee>
+
+          
+          <br><br>
+
+      <marquee style="color: rgb(0, 0, 0);background-color: cadetblue;font-size: xx-large;">
+                  تحريك النص اعتيادي 
+      </marquee>
+
+      <br><br>
+
+      <marquee class="mar" direction="up">
+                  تحريك النص بتأثير خاصية التحكم بالاتجاه 
+      </marquee>
+
+      <marquee class="mar" direction="down">
+                  تحريك النص بتأثير خاصية التحكم بالاتجاه 
+      </marquee>
+
+      <br><br>
+
+      <marquee class="mar2" scrollamount="40" direction="right" behavior="alternate">
+        تحريك النص بتأثير السرعة 
+
+      </marquee>
+
+      
+        <br><br><br>
+
+        <table>
+            <tr>
+                <td colspan="2" style="padding: 5px;">
+                    <label>دمج عامودين</label>
+                </td>
+                <td rowspan="2" style="padding: 5px;">
+                    <label>دمج صفين</label>
+                </td>
+                <td>
+                    <label>col2</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>raw2</label>
+                </td>
+                <td>
+                    <label>col1</label>
+                </td>
+                <td>
+                    <label>col2</label>
+                    
+                </td>
+                <td>
+                    <label>col3</label>
+                </td>
+            </tr>
+        </table>
+        
+        <br><br>
+        <a  href="imag1.jpg" >اضغط لظهور الصورة</a>     
+        <br><br>
+        
+        <a name="start"></a>
+        <br><br>
+        <label>لينك في نفس الصفحة للذهاب الى بداية الصفحة </label>
+        <br>
+        <label>لينك في نفس الصفحة للذهاب الى بداية الصفحة </label>
+        <br>
+        <label>لينك في نفس الصفحة للذهاب الى بداية الصفحة </label>
+        <br>
+        <label>لينك في نفس الصفحة للذهاب الى بداية الصفحة </label>
+        <br>
+        <label>لينك في نفس الصفحة للذهاب الى بداية الصفحة </label>
+
+        <br>
+        <a href="#start">go start page</a>
+        <br>
+        <a  href="image2.jpg" target="_blank">all page open</a>
+        <br>
+        <a  href="image2.jpg" target="_top">open in same page</a>
+
+        <br>
+        
+        <script >
+            document.write("<hr> - file Java kashkoul ");
+        </script>>
+
+        <h3>زر البوتون هو عملية استدعاء بواسطة (document.getid...)</h3>
+      
+        <input id="idbutun" type="button">
+
+
+        <h3>التيكست بوكس هو استدعاءالعنصر في ملف الجافا بأستخدام (الويندوز . اسم الاي دي + التكملة)</h3>
+
+        <input id="idtextBox" type="text"> 
+
+        <br><br>
+        
+        <label class="labelid">هذا الاستدعاء ( يكون فقط للعناصر الي بيها محتويات يعني من افتح التاك يكون بي سلاش تاك )(innerHTML)</label>
+        <br>
+        <label class="labelid">مثل تاك اليبل , تاك اللينك . اما تاك الانبت مابي محتويات ميرهم عليه هذا الاستدعاء </label>
+        <br>
+        <a class="clasA" id="idLink" href="https://google.com"></a>
+
+        <hr><br>
+
+        <script>
+            var name="ali";
+            var number= 209476;
+            var bool = true ;
+            document.write(name + "......" + number + " ....... " + bool +"<br>");
+            document.write(typeof name + ",,,," + typeof number + ",,,,," +  typeof(bool) +"<br>");
+
+            const pi = 3.14;
+            document.write(pi + " >>>>>>> " + "هذه قيمة ثابتة لذلك نستخدم التعريف كونست غير قابل للتغير بعدها ");
+        </script>
+
+        <hr>
+        <h1>The Events</h1>
+        <h2>On Click Events  </h2>
+
+        <input style="width: 280px; text-align: center;" id="idINPUT" type="text">
+        <br><br>
+        /*ط 1*/
+        <button onclick="window.idINPUT.value='حدث اون كلك بأستدام كود جافا داخل الاج تي ام ال';">click on events</button>
+
+        <br><br>
+        
+        /*ط 2*/
+        <a onclick="document.write('HEllo in page link');"  id="iDLINK">link on click Events</a>
+        <br><hr>
+
+        <h2>On Mouse click - (ondblclick , onmusedown+onmuseup , onmuseenter + onmuseleave , onmuseover+onmuseout , onmusemove)</h2>
+    
+        <label ondblclick="this.style.color='red';" onmousemove="this.style.fontSize='60px';">on-Double-click + on-Mouse-move</label>
+        <br><br>
+        <img onmouseenter="bigimag(this);" onmouseleave="smallimsg(this);" style="height: 70px; width: 70px;" src="photo1.jpg">
+    
+        <br><br>
+        <label> هنا استخدمت حدث التقر المستمر على الماوس يؤدي الى اخفاء النص ومن اشيل ايدي من الماوس يظهر النص عن طريق استدعاء دوال </label>
+        <h4 style="opacity: 0.2; font-size: xx-large; font-style: unset;" onmousedown="opsityevent(this);" onmouseup="opsityevent2(this);" >خاصية الاخفاء</h4>
+        
+        <br><hr><br>
+        <h1>الفاكشن الاولى : تم تعريف متغير يحمل قيمة ما سيكتب داخل التيكست بوكس وثم طباعة القيمة عن طريق الايدي الخاص في الاج واخر خطوة استدعاء الفاكشن وتكون داخل البوتون </h1>
+
+        <h3 id="idh">-------------------------------</h3>
+
+       <h3 id="idh2">------------------------------</h3> 
+
+       <label>your Name :</label> <input id="idnam" type="text">
+       <label>Password :</label> <input id="idpassword" type="password">
+       <br><br>
+
+       <button onclick="function1();" >click on </button>
+       <br><hr><br>
+
+       <h1>الفاكشن الثانية :اعبر متغيرات عن طريق الفاكشن واخلي قيمة هذه المتغيرات في الاستدعاء</h1>
+
+
+       ypur information : <label id="label2id"></label>
+
+       <br><br>
+       
+       <button id="butonid" onclick="function2('iraq' ,33);">click on </button>
+       <script>
+        window.butonid.style.color="red";
+        window.butonid.style.fontSize= 33;
+       </script>
+
+       <br><br>
+       <h5 id="hfh"></h5>
+
+       <button onclick="function3('welcome' ,window.txtid )">print</button>
+
+       <input id="txtid" type="text"/>
+
+        <script  src="جافا_كشكول.js" ></script>
+
+        <hr>
+        <h1>فاكشن الاسترجاع الي استخدم بيها ريتيتن لازم انتبه تكون في هذا الملف تحت ملف استدعاء الجافا حتى يشغل</h1>
+        
+        <script>
+        document.write(getelement());
+      </script>
+    
+    <HR>
+    <h1>فاكشن الحدث  X , Y </h1>
+    <p>تم عمل فاكشن وتعريف الحدثان الاكس والواي عن طريق الكلينت الخاص بكل واحد ثم استدعاء هذه الفاكشن داخل الدف </p>
+    <div onmousemove="eventXY(event);" onmouseleave="window.p1.innerHTML='out';"></div>
+    
+   <P id="P1">Event ( X , Y )</P>
+
+   <hr>
+   <h1>عوامل التخصيص</h1>
+   <script>
+        var x= 5 , y=3  ;
+        var nuber = "x = " + x +"  y = " + y ;
+        document.write(nuber +"<br>");
+         x += 2;
+         document.write("x  +=  2 :  "  + x + "<br>");
+         y -= 8;
+         document.write("y  -=  8 :  "  + y + "<br>");
+         
+   </script>
+
+   <hr>
+   <h1>عوامل المنطقية </h1>
+   <script>
+   var bool = true && true && true;
+   document.write(" (AND &&) كلها ترو  = " + bool +"<br><br>") ;
+   var bool = true && false && true;
+   document.write("(AND &&) وحدة فولس = " + bool+"<br><br>") ;
+   var bool = true || false || true;
+   document.write("(OR ||)  وحدة فولس = " + bool+"<br><br>") ;
+   var bool = true || true || true;
+   document.write("(OR ||) كلها ترو  = " + bool+"<br><br>") ;
+   var bool = !true ;
+   document.write("(NOT !) تقلب العملية  = " + bool+"<br><br>") ;
+   </script>
+
+   <hr>
+   <h1>عوامل المقارنة </h1>
+
+   <script>
+    var x = 4 , y = 4 , f="4";
+    var z = x == y;
+    document.write("== عملية مقارنة الارقام فقط بدون نوع اذا كان رقم ام نص" +"  >>>>>>>  "  + z + "<br>" );
+    var z = x === f;
+    document.write("=== عملية مقارنة الارقام مع مقارنة نوع اذا كان رقم ام نص" +"  >>>>>>>  "  +z );
+   </script>
+<p>بالاضافة الى عوامل الاكبر والاصغر , اصغر او يساوي , اكبر او يساوي وغيرها </p>
+
+   <hr>
+    <h1>عوامل حسابية </h1>
+    <p>هي عوامل العمليات الحسابية الاعتيادية ( وهي  الجمع , الطرح , القسمة , الضرب , باقي القسمة )</p>
+
+    <hr>
+    <h1>if condition</h1>
+   nuber 1 :  <input id="numid1" type="text">
+   nuber 2 :  <input id="numid2" type="text">
+   <br>
+   
+   <button onclick="window.pid.innerHTML=''; codiIF();" >print</button>
+   <p id="pid"></p>
+    
+   <hr>
+   <h1>swich</h1>
+   input number : <input id="txt2id" type="text"> 
+   <button onclick="swichi();">click on </button>
+   <p id="p2id"></p>
+   <hr>
+
+   
+</body>
+
+</html>

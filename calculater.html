@@ -1,0 +1,157 @@
+<html>
+   <head>
+       <title>calculater</title>
+
+       <style>
+
+        table{
+            font-style: oblique;
+            border: 7px solid rgb(36, 66, 97);
+            padding-left: 4px;
+            padding-right: 4px;
+            background-color: rgb(44, 142, 212);
+        }
+        
+        div{
+            font-size: 30px;
+            color: brown;
+            font-weight: bold;
+
+        }
+
+        label{
+            font-weight:bold;
+            font-size:x-large;
+            color: rgb(72, 121, 214);
+            
+        }
+
+        .txt1{
+            text-align: center;
+            font-size: larger;
+            font-weight:bold;
+            color: rgb(64, 174, 204);
+            border-radius: 6px;
+            border: 3px inset rgb(47, 98, 154);
+
+        }
+
+        .butun{
+            font-size: larger;
+            border: 2px solid rgb(63, 161, 200);
+            border-radius: 7px;
+            padding: 8px;
+            color: rgb(36, 91, 93);
+            background-color: rgb(255, 255, 255);
+        }
+
+        .labelResult{
+         padding-left: 70px;
+         padding-right: 70px;
+         font-style: normal;
+         border: 2px solid rgb(104, 149, 180);
+         border-radius: 4px;
+         color: rgb(23, 92, 111);
+         background-color: black; 
+         color: honeydew;
+
+        }
+       </style>
+
+   </head>
+
+   <body style="background-color: rgb(253, 253, 253);" >
+
+       <table align="center" >
+            <tr>
+                <td colspan="2" align="center">
+                    <div>my calculater</div>
+
+                    <br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label style="color: aliceblue;">number 1:</label>
+                </td>
+
+                <td>
+                    <input id="idtxt1" class="txt1" type="text" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label style="color: aliceblue;">number 2:</label>
+                </td>
+               
+                <td>
+                    <input id="idtxt2" class="txt1" type="text">
+                </td>
+            </tr>
+
+            <tr >
+                
+                <td style="padding-top: 20px;" colspan="2" align="center">
+                    <input class="butun" type="button" value="+" onclick="result('add');">
+                    <input class="butun" type="button" value="-" onclick="result('sub')">
+                    <input class="butun" type="button" value="x" onclick="result('mult')">
+                    <input class="butun" type="button" value="/" onclick="result('div')">
+                    <input class="butun" type="button" value="%" onclick="result('mod')">
+                </td>
+                
+            </tr>
+           
+            <tr>
+                <td  style="padding-top: 20px; " colspan="2" align="center">
+                    <label id="idlabel" class="labelResult">0</label>
+
+                </td>
+
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <input  class="butun" type="button" value="Exet" onclick="window.close()">
+                </td>
+            </tr>
+
+
+       </table>
+
+   </body>
+
+   <script type="text/javascript">
+
+    function result(operation)
+    {
+        <!---لتحويل القيمة النصية الى قيمة رقمية -دالة (eval)-->
+        if(operation=='add')
+        {
+            window.idlabel.innerHTML= eval(window.idtxt1.value) + eval(window.idtxt2.value);
+        }
+
+        if(operation=='sub')
+        {
+            window.idlabel.innerHTML= eval(window.idtxt1.value) - eval(window.idtxt2.value);
+        }
+        
+        if(operation=='mult')
+        {
+            window.idlabel.innerHTML= eval(window.idtxt1.value) * eval(window.idtxt2.value);
+        }
+
+        if(operation=='div')
+        {
+            window.idlabel.innerHTML= eval(window.idtxt1.value) / eval(window.idtxt2.value);
+        }
+
+        if(operation=='mod')
+        {
+            window.idlabel.innerHTML= eval(window.idtxt1.value) % eval(window.idtxt2.value);
+        }
+    }
+
+   </script>
+</html>
